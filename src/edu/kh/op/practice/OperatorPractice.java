@@ -8,13 +8,13 @@ public class OperatorPractice {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("인원 수 : ");
-		int input1 = sc.nextInt();
+		int people = sc.nextInt();
 		
 		System.out.print("사탕 개수 : ");
-		int input2 = sc.nextInt();
+		int candy = sc.nextInt();
 		
-		int result1 = input2 / input1;
-		int result2 = input2 % input1;
+		int result1 = candy / people;
+		int result2 = candy % people;
 		
 		System.out.printf("1인당 사탕 개수 : %d\n", result1);
 		System.out.printf("남는 사탕 개수 : %d\n", result2);
@@ -24,25 +24,26 @@ public class OperatorPractice {
 	public void practice2() {
 		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.print("이름 : ");
-		String input1 = sc.next();
+		String name = sc.next();
 		
 		System.out.print("학년(정수만) : ");
-		int input2 = sc.nextInt();
+		int grade = sc.nextInt();
 		
 		System.out.print("반(정수만) : ");
-		int input3 = sc.nextInt();
+		int group = sc.nextInt();
 		
 		System.out.print("번호(정수만) : ");
-		int input4 = sc.nextInt();
+		int number = sc.nextInt();
 		
 		System.out.print("성별(남학생/여학생) : ");
-		String input5 = sc.next();
+		String gender = sc.next();
 		
 		System.out.print("성적(소수점 아래 둘째 자리까지) : ");
-		double input6 = sc.nextDouble();
+		double score = sc.nextDouble();
 		
-		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f이다.\n", input2, input3, input4, input1, input5, input6);
+		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f이다.\n", grade, group, number, name, gender, score);
 	}
 	
 	
@@ -60,9 +61,9 @@ public class OperatorPractice {
 		int math = sc.nextInt();
 		
 		int sum = kor + eng + math; // 합계
-		double avg = sum / 3.0; // 평균
+		double avg = sum / 3; // 평균
 		
-		System.out.println("합계 : " + sum);
+		System.out.printf("합계 : %d\n", sum);
 		System.out.printf("평균 : %.1f\n", avg);
 		
 		// 세 과목의 점수와 평균을 가지고 합격 여부를 처리하는데
@@ -71,7 +72,8 @@ public class OperatorPractice {
 		
 		boolean result = (kor >= 40) && (eng >= 40) && (math >= 40) && (avg >= 60);
 		
-		System.out.println(  result ? "합격" : "불합격"  );
+		System.out.println(result ? "합격" : "불합격");
+		
 	}
 
 }
