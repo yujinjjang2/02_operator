@@ -73,7 +73,6 @@ public class OperatorPractice {
 		boolean result = (kor >= 40) && (eng >= 40) && (math >= 40) && (avg >= 60);
 		
 		System.out.println(result ? "합격" : "불합격");
-		
 	}
 
 }
